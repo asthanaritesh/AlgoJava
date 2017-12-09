@@ -1,2 +1,2 @@
 # AlgoJava
-This Repo contains various algorithms coded in Java
+This Repo contains simple algorithms coded in Java
