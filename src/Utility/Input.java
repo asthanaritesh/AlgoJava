@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Input {
-	enum inputType{singleInt, arrayOfInt, singleChar, arrayOfChar, singleString, arrayOfString};  
-	
 	public static int singleInt(){
 		System.out.println("Provide your input as single integer value:");
 		Scanner scanner = new Scanner(System.in);
@@ -17,11 +15,11 @@ public class Input {
 			System.err.println("\nWrong value Provided: "+scanner.next()+"\nProvide Only integer value");
 			System.err.flush();
 		}
-		scanner.close();
+		//scanner.close();
 		return input;
 	}
 	
-	public static int[] arrayOfInt(){
+	public static int[] arrayOfInts(){
 		System.out.println("Provide your input as space-sepearted integer values. Press Enter when done:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
@@ -36,7 +34,7 @@ public class Input {
 		catch(NumberFormatException e){
 			e.printStackTrace();
 		}
-		scanner.close();
+		//scanner.close();
 		return inputIntArr;
 	}
 	
@@ -50,11 +48,11 @@ public class Input {
 				input = ch;
 			else System.err.println("Invalid Input, Not a Char" + ch);
 		}
-		scanner.close();
+		//scanner.close();
 		return input;
 	}
 	
-	public static char[] arrayOfChar(){
+	public static char[] arrayOfChars(){
 		System.out.println("Provide your input as space-sepearted character values. Press Enter when done:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
@@ -72,7 +70,7 @@ public class Input {
 		catch(NumberFormatException e){
 			e.printStackTrace();
 		}
-		scanner.close();
+		//scanner.close();
 		return inputCharArr;
 	}
 	
@@ -82,26 +80,60 @@ public class Input {
 		String input = " ";
 		if(scanner.hasNextLine())
 			input = scanner.nextLine();
-		scanner.close();
+		//scanner.close();
 		return input;
 	}
 	
-	public static String[] arrayOfString(){
-		System.out.println("Provide your input as space-sepearted String values. Press Enter when done:");
+	public static String[] arrayOfStrings(){
+		System.out.println("Provide your input as Enter-sepearted String values. Press Blank Enter when done:");
+		Scanner scanner = new Scanner(System.in);
+		List<String> strList = new ArrayList<String>();
+		while(scanner.hasNextLine()) {
+			String line = scanner.nextLine();
+			if(line.length()>0)
+				strList.add(line);
+			else break;
+		}
+		String[] inputStr = new String[strList.size()];
+		int j = 0;
+		for(String s : strList)
+			inputStr[j++]=s;
+		//scanner.close();
+		return inputStr;
+	}
+	
+	public static ArrayList<String> listOfStrings(){
+		System.out.println("Provide your input as Enter-sepearted String values. Press Blank Enter when done:");
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<String> strList = new ArrayList<String>();
+		while(scanner.hasNextLine()) {
+			String line = scanner.nextLine();
+			if(line.length()>0)
+				strList.add(line);
+			else break;
+		}
+		//scanner.close();
+		return strList;
+	}
+	
+	public static String[] arrayOfWords(){
+		System.out.println("Provide your input as space-sepearted Word values. Press Enter when done:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
 		String[] inputStr = line.split("\\s+");
-		scanner.close();
+		//scanner.close();
 		return inputStr;
 	}
 	
 	public static void main(String[] args) {
-		//int i = singleInt(); System.out.println(i);
-		//int[] iArr = arrayOfInt(); for(int j : iArr) System.out.println(j);
-		//char c = singleChar(); System.out.println(c);
-		//char[] cArr = arrayOfChar(); System.out.println(cArr);
-		//String s = singleString(); System.out.println(s);
-		String[] sArr = arrayOfString(); for(String j : sArr) System.out.println(j);
+		int i = singleInt(); System.out.println(i);
+		int[] iArr = arrayOfInts(); for(int j : iArr) System.out.println(j);
+		char c = singleChar(); System.out.println(c);
+		char[] cArr = arrayOfChars(); System.out.println(cArr);
+		String s = singleString(); System.out.println(s);
+		String[] sArr = arrayOfWords(); for(String j : sArr) System.out.println(j);
+		String[] sArr1 = arrayOfStrings(); for(String j : sArr1) System.out.println(j);
+		List<String> sList = listOfStrings(); System.out.println(sList);
 		System.exit(0);
 	}
 }

@@ -11,39 +11,35 @@ public class LinkList {
 	public LinkList(Node node) {
 		this.root = node;
 	}
+	
 	public Node getRoot() {
 		return root; 
 	}
-	public void print(Node node) {
-		if (node!= null) 
-			System.out.print(node.data);
-		if(node.next != null) {
-			System.out.print(" --> ");
-			print(node.next);
+	
+	public int length() {
+		int len=0;
+		Node node = root;
+		while(node != null) {			
+			len++;
+			node = node.next;
 		}
+		return len;
 	}
 	
-	public void printReverse(Node node) {
-		if (node.next != null)
-			printReverse(node.next);
-		System.out.print(node.data + " <-- ");
-	}
-	
-	public static LinkList constructFromArray(int[] iArray)
+	public LinkList (int[] iArray)
 	{
-		LinkList list = null;
 		Node curNode = null;
 		if(iArray.length>0) {
-			Node root = new Node(iArray[0]);
-			list = new LinkList(root);
+			root = new Node(iArray[0]);
 			curNode = root;
-		} else return null;
+		}
+		else root=null;
 		for (int i=1; i<iArray.length; i++) {
 			Node nextNode = new Node(iArray[i]);
 			curNode.next = nextNode;
 			curNode = nextNode;
 		}
-		return list;
+		curNode.next=null;
 	}
 	
 	static LinkList constructList() {
@@ -70,15 +66,25 @@ public class LinkList {
 		return list;
 	}
 	
+	public void print() {
+		System.out.println("Printing the LinkList: ");
+		Node node = root;
+		while(node != null) {
+			if(node!=root) System.out.print(" -> ");
+			System.out.print(node.data);
+			node=node.next;
+		}		
+	}
+	
 	public static void main(String[] args) {
-		//int[] input = {1,2,3,4,5,6,7,8,9,10};
-		int[] input = Input.arrayOfInt();
-		LinkList list = constructFromArray(input);
-		//LinkList list = constructList();
-		Node root = list.getRoot();
-		System.out.print("print Called: \n");
-		list.print(root);
-		System.out.print("\nprintReverse Called: \n");
-		list.printReverse(root);
+		@SuppressWarnings("unused")	LinkList list1 = constructList();
+		@SuppressWarnings("unused")	int[] input1 = {1,2,3,4,5,6,7,8,9,10};
+		int[] input2 = Input.arrayOfInts();
+		LinkList list2 = new LinkList(input2);
+		Node root = list2.getRoot();
+		System.out.println("print Called: ");
+		list2.print();
+		System.out.println("\nLength is: "+list2.length());
+		System.exit(0);
 	}
 }
