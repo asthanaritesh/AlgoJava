@@ -3,9 +3,9 @@ import BTree.Node;
 import Utility.BTreePrinter;
 import Utility.BTreePrinter2;
 
-public class BTreeTest {
+public class BTreePrinterTest {
 
-    private static Node test1() {
+    public static Node test1() {
         Node root = new Node(2);
         Node n11 = new Node(7);
         Node n12 = new Node(5);
@@ -42,7 +42,7 @@ public class BTreeTest {
         return root;
     }
 
-    private static Node test2() {
+    public static Node test2() {
         Node root = new Node(2);
         Node n11 = new Node(7);
         Node n12 = new Node(5);
@@ -69,11 +69,9 @@ public class BTreeTest {
     }
 
     public static void main(String[] args) {
-
     	BTreePrinter.print(test1());
     	BTreePrinter.print(test2());
         BTreePrinter2.print(test1());
         BTreePrinter2.print(test2());
-
     }
 }

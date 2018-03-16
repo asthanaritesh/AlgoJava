@@ -3,7 +3,9 @@ package Sort;
 import java.util.Arrays;
 
 import Utility.Input;
-
+//Maintain two sub-arrays, first one is sorted, and second one in unsorted
+//pick the first one from unsorted array and find the appropriate place(index) in the sorted array for it to be inserted.
+//Each element in the sorted array after that index will move to right by one position
 public class InsertionSort {
 	public static void main(String args[]) {
 		int[] arr = Input.arrayOfInts();

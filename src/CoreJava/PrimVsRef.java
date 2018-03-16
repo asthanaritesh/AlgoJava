@@ -19,8 +19,9 @@ public class PrimVsRef {
 	public static int someMethod (int i, int[] iArr, String str, StringBuilder sb, ArrayList<Integer> list, Sample sam) {
 		int iLocal = i; iLocal = 2;
 		int[] iArrLocal = iArr;	iArrLocal[0]=5;iArrLocal[1]=6;iArrLocal[2]=7;iArrLocal[3]=8;
+		str = "MeChanged";
 		String strLocal = str; strLocal = "Changed";
-		StringBuilder sbLocal = sb; sbLocal = sb.append("sb Changed");
+		StringBuilder sbLocal = sb; sbLocal.append(" sb Changed");
 		ArrayList<Integer> listLocal = list; listLocal.add(15); listLocal.add(16); listLocal.add(17); listLocal.add(18); 
 		Sample samLocal = sam; samLocal.iSample=3;
 		Sample samNew = new Sample(iLocal, strLocal, sbLocal, iArrLocal, listLocal);

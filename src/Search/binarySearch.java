@@ -9,7 +9,7 @@ public class binarySearch {
 	static int index;
 	
 	public static void main(String[] args) {
-		System.out.println("Write the int array");
+		System.out.println("Write the sorted int array");
 		int[] intArr = Input.arrayOfInts();
 		System.out.println("Write the value to be found");
 		searchFor = Input.singleInt();

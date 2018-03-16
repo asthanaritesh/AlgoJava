@@ -1,7 +1,5 @@
 package LinkList;
 
-import java.util.Scanner;
-
 import Utility.Input;
 
 public class LinkList {
