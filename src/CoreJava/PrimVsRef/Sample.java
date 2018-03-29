@@ -1,4 +1,4 @@
-package CoreJava;
+package CoreJava.PrimVsRef;
 import java.util.*;
 
 public class Sample {

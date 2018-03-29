@@ -1,0 +1,10 @@
+//For text wrap use Alt+Shift+Y.
+
+<1> HashCode
+<A> The hashcode of a Java Object is simply a number, it is 32-bit signed int, that allows an object to be managed by a hash-based data structure. hashcode is not the actual memory address but its a link for JVM to fetch the object from a specified location with a complexity of O(1). That link/address is converted to integer and returned. hashcode for a certain object will remain same till the life of application.
+<B> you need to override hashcode() and equals() if you want different behavior. (think of deep equal based on content of object rather than the memory address.). If two objects are equals then these two objects should return same hash code. So we have to implement hashcode() method of a class in such way that if two objects are equals, ie compared by equals() method of that class, then those two objects must return same hash code. If you are overriding hashCode you need to override equals method also.
+<C> System.identityHashCode() will return the original hashcode even if you have overwritten the hashcode() method.
+
+<2> Singleton
+<A> The singleton pattern can be failed using reflection (see Pattern.Creational.Singleton.PlayPatter.java). To overcome use Enum (see Singleton.java)
+<B> If your singleton is serializable (ie implements interface serializable), singleton functionality can be failed there also.(first serialize, then deserialize using ObjectOutputStream). To overcome, implement the readResolve() method (just call getInstance() from this method). 
