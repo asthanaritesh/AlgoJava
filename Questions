@@ -8,3 +8,5 @@
 <2> Singleton
 <A> The singleton pattern can be failed using reflection (see Pattern.Creational.Singleton.PlayPatter.java). To overcome use Enum (see Singleton.java)
 <B> If your singleton is serializable (ie implements interface serializable), singleton functionality can be failed there also.(first serialize, then deserialize using ObjectOutputStream). To overcome, implement the readResolve() method (just call getInstance() from this method). 
+
+<3> To prevent cloning on singleton object (suppose singleton class is derived from a base class that implements clone), let us explicitly throw CloneNotSupportedException exception in clone() method.
