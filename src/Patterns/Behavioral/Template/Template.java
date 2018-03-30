@@ -9,37 +9,37 @@ abstract class HouseTemplate {
 		buildCeilings();
 		System.out.println("House is built.");
 	}
-	public void buildLand() {
+	protected void buildLand() {
 		System.out.println("Building Common Land");
 	}
-	public void buildFoundation() {
+	protected void buildFoundation() {
 		System.out.println("Building Common Foundation");
 	}
-	abstract void buildWalls();
-	abstract void buildWindows();
-	abstract void buildCeilings();
+	protected abstract void buildWalls();
+	protected abstract void buildWindows();
+	protected abstract void buildCeilings();
 }
 
 class HouseGlass extends HouseTemplate{
-	void buildWalls() {
+	protected void buildWalls() {
 		System.out.println("Building Glass Walls");
 	}
-	void buildWindows() {
+	protected void buildWindows() {
 		System.out.println("Building Glass Windows");
 	}
-	void buildCeilings() {
+	protected void buildCeilings() {
 		System.out.println("Building Glass Ceilings");
 	}
 }
 
 class HouseConcrete extends HouseTemplate{
-	void buildWalls() {
+	protected void buildWalls() {
 		System.out.println("Building Concrete Walls");
 	}
-	void buildWindows() {
+	protected void buildWindows() {
 		System.out.println("Building Concrete Windows");
 	}
-	void buildCeilings() {
+	protected void buildCeilings() {
 		System.out.println("Building Concrete Ceilings");
 	}
 }

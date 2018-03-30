@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="Patterns.Behavioral.Iterator.Iterator" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Iterator/Iterator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="404" y="85"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="Patterns.Behavioral.Iterator.CollectionNames.NameIterator" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Iterator/Container.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="406" y="265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="Patterns.Behavioral.Iterator.Container" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Iterator/Container.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="162" y="80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="Patterns.Behavioral.Iterator.CollectionNames" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Iterator/Container.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="157" y="265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Patterns.Behavioral.Iterator.PlayPattern" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Iterator/PlayPattern.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="790" y="109"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="6">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <realization id="7">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
