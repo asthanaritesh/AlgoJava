@@ -12,6 +12,7 @@ public class InsertionSort {
 		for(int i=0; i<arr.length; i++) {
 			int j = i-1, curElem = arr[i];
             /* Move elements of arr[] from i-1 to 0, that are greater than current element, to one position ahead of their current position */
+			/* we are only taking the first element of the unsorted array (or say last element of sorted array), so order will not be disturbed in unsorted array*/
 			while(j>=0 && arr[j]>curElem) {
 				arr[j+1] = arr[j];
 				j--;

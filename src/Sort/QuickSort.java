@@ -17,10 +17,10 @@ public class QuickSort {
 				i++;j--;
 			}
 		}
-		if(L < j) //Note J. Do not use i. This is imp, here i is greater or equal to j, b/c of inc/dec after swapping.
-			quickSort(arr, L, j);
+		if(L < j) //Note j. Do not use i. This is imp, here i is greater or equal to j, b/c of inc/dec after swapping.
+			quickSort(arr, L, pivot); // or can use j in place of pivot
 		if(i < R) // note i.
-			quickSort(arr, i, R);
+			quickSort(arr, pivot, R); // or can use i in place of pivot
 	}
 	
 	static void swap(int[] arr, int i, int j) {

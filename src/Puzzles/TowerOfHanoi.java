@@ -18,7 +18,7 @@ public class TowerOfHanoi {
 	public static Stack source;
 	public static Stack dest;
 	public static Stack aux;
-	public final char[] DiscName = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+	public final char[] DiscName = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 	
 	public TowerOfHanoi(int n) {
 		source = new Stack("Source");

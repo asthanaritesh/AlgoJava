@@ -1,13 +1,23 @@
-Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed 
+to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request 
+and whether the request is required to be sent to the next object in the chain or not.
 
 Chain of Responsibility Pattern Example in JDK
-Let’s see the example of chain of responsibility pattern in JDK and then we will proceed to implement a real life example of this pattern. We know that we can have multiple catch blocks in a try-catch block code. Here every catch block is kind of a processor to process that particular exception.
+Let’s see the example of chain of responsibility pattern in JDK and then we will proceed to implement a real life example 
+of this pattern. We know that we can have multiple catch blocks in a try-catch block code. Here every catch block is 
+kind of a processor to process that particular exception.
 
-So when any exception occurs in the try block, its send to the first catch block to process. If the catch block is not able to process it, it forwards the request to next object in chain i.e next catch block. If even the last catch block is not able to process it, the exception is thrown outside of the chain to the calling program.
+So when any exception occurs in the try block, its send to the first catch block to process. If the catch block is not 
+able to process it, it forwards the request to next object in chain i.e next catch block. 
+If even the last catch block is not able to process it, the exception is thrown outside of the chain to the calling program.
 
 Chain of Responsibility Design Pattern Example
-One of the great example of Chain of Responsibility pattern is ATM Dispense machine. The user enters the amount to be dispensed and the machine dispense amount in terms of defined currency bills such as Rs 2000, 500, 100 etc.
+One of the great example of Chain of Responsibility pattern is ATM Dispense machine. 
+The user enters the amount to be dispensed and the machine dispense amount in terms of defined currency bills 
+such as Rs 2000, 500, 100 etc.
 
-If the user enters an amount that is not multiples of 100, it throws error. We will use Chain of Responsibility pattern to implement this solution. 
+If the user enters an amount that is not multiples of 100, it throws error. 
+We will use Chain of Responsibility pattern to implement this solution. 
 
-Note that we can implement this solution easily in a single program itself but then the complexity will increase and the solution will be tightly coupled. So we will create a chain of dispense systems to dispense bills of Rs 2000, 500 and 100.
+Note that we can implement this solution easily in a single program itself but then the complexity will increase and the 
+solution will be tightly coupled. So we will create a chain of dispense systems to dispense bills of Rs 2000, 500 and 100.

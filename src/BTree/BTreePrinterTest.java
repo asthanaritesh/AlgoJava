@@ -70,8 +70,8 @@ public class BTreePrinterTest {
 
     public static void main(String[] args) {
     	BTreePrinter.print(test1());
-    	BTreePrinter.print(test2());
         BTreePrinter2.print(test1());
+    	BTreePrinter.print(test2());
         BTreePrinter2.print(test2());
     }
 }

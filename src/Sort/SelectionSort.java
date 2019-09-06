@@ -5,7 +5,7 @@ import Utility.Input;
 
 //Maintain two subarrays, firstone is sorted, and second one in unsorted
 //find the minimum element and swap with the first elem of unsorted array.
-//unsorted array reduces by one sixe in each iteration
+//unsorted array reduces by one size in each iteration
 public class SelectionSort {
 	public static void main(String[] args) {
 		int[] arr = Input.arrayOfInts();

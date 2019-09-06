@@ -28,7 +28,7 @@ public class binarySearch {
 		}
 		int mid = (s+e)/2;
 		if (searchFor == intArr[mid])
-			return (s+e)/2;
+			return mid;
 		else if (searchFor < intArr[mid])
 			return binSearch(intArr, s, mid-1); // mid-1 and mid+1 are important here.
 		else return binSearch(intArr, mid+1, e);
