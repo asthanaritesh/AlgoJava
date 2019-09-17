@@ -1,10 +1,17 @@
-package collect;
+package Array;
 
 import java.util.Arrays;
 import java.util.Iterator;
 
 public class ArrayTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
+		int[] intArr1 = new int[] {1,2,3};
+		Integer[] intArr2 = new Integer[] {1,2,3};
+		int[] intArr3 = new int[4];
+		System.out.println("intArr1: "+ Arrays.toString(intArr1));
+		System.out.println("intArr2: "+ Arrays.toString(intArr2));
+		System.out.println("intArr3: "+ Arrays.toString(intArr3));
+		
 		String[] strArr1 = {"A", "B", "C", "D", "E"};
 		String[] strArr2 = new String[] {"H", "F", "J", "G", "I"};
 		String[] strArr3 = new String[2];
@@ -19,6 +26,8 @@ public class ArrayTest {
         for (String str : strArr1) {
         	System.out.print("\t" + str);
         }
+        
+        System.out.println("\nUsing Java Style: " + Arrays.toString(strArr1));      
         
         String[] strArr12 = new String[strArr1.length + strArr2.length];
 		System.arraycopy(strArr1, 0, strArr12, 0, strArr1.length);
