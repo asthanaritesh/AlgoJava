@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="Patterns.Observer.Model" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="178" width="168" x="368" y="202"/>    
+  <class id="1" language="java" name="Patterns.Behavioral.Observer.ViewWireFrame" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="154" y="449"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Patterns.Observer.View2D" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="692" y="467"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="3" language="java" name="Patterns.Observer.Observer" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="777" y="232"/>    
+  <interface id="2" language="java" name="Patterns.Behavioral.Observer.Observer" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="388" y="173"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="4" language="java" name="Patterns.Observer.ViewWireFrame" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="905" y="465"/>    
+  <class id="3" language="java" name="Patterns.Behavioral.Observer.View3D" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="365" y="447"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="Patterns.Observer.Subject" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="124" width="168" x="368" y="420"/>    
+  <class id="4" language="java" name="Patterns.Behavioral.Observer.View2D" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="575" y="447"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Patterns.Behavioral.Observer.PatternPlay" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/PatternPlay.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="127" y="116"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="Patterns.Behavioral.Observer.Subject" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="810" y="127"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="6" language="java" name="Patterns.Observer.View3D" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/Observer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1106" y="462"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="Patterns.Observer.PatternPlay" project="AlgoJava" 
-    file="/AlgoJava/src/Patterns/Observer/PatternPlay.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1138" y="233"/>    
+  <class id="7" language="java" name="Patterns.Behavioral.Observer.Model" project="AlgoJava" 
+    file="/AlgoJava/src/Patterns/Behavioral/Observer/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="846" y="420"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,28 +65,28 @@
     </display>  
   </class>  
   <realization id="8">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </realization>  
-  <association id="9">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="obsList"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+  <realization id="9">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="10">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="11" name="obsList"/>      
+      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="12">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
   <realization id="13">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
   </realization>  
   <realization id="14">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="TARGET" refId="2"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

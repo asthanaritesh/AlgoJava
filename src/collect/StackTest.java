@@ -15,7 +15,7 @@ public class StackTest {
 		System.out.println("Original stack is: "+ sObj);
 		
 		System.out.println("\nPeek of stack is: "+ sObj.peek());
-		
+			
 		String popped = sObj.pop();
 		System.out.println("\nPopped: "+ popped);
 		System.out.println("After pop, stack is: "+ sObj);

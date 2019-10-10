@@ -1,5 +1,14 @@
 package Array;
-
+/*
+ * Arrays.fill()
+ * Arrays.copyOf(arr1, len)
+ * Arrays.toString(arr1)
+ * Arrays.clone(arr1)
+ * Arrays.equals(arr1, arr2)
+ * System.arraycopy(arr1, 0, arr2, arr1.length, arr2.length);
+ * Arrays.binarySearch(arr1, "I")
+ * Arrays.sort(arr1)
+ */
 import java.util.Arrays;
 import java.util.Iterator;
 
@@ -16,6 +25,9 @@ public class ArrayTest {
 		String[] strArr2 = new String[] {"H", "F", "J", "G", "I"};
 		String[] strArr3 = new String[2];
 		strArr3[0] = "K";
+		Arrays.fill(strArr3,  "A");
+		
+		String[] copy = Arrays.copyOf(strArr3, 5); 
 		
         System.out.println("\nUsing For C++ style: ");
         for (int i =0; i< strArr1.length; i++) {

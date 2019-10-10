@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="Patterns.Behavioral.Command.PlayPattern" project="AlgoJava" 
     file="/AlgoJava/src/Patterns/Behavioral/Command/PlayPattern.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="954" y="45"/>    
+    <position height="-1" width="-1" x="859" y="62"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="Patterns.Behavioral.Command.SellCommand" project="AlgoJava" 
     file="/AlgoJava/src/Patterns/Behavioral/Command/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="535" y="349"/>    
+    <position height="-1" width="-1" x="535" y="419"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="Patterns.Behavioral.Command.Stock" project="AlgoJava" 
     file="/AlgoJava/src/Patterns/Behavioral/Command/Stock.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="758" y="192"/>    
+    <position height="-1" width="-1" x="819" y="246"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <interface id="5" language="java" name="Patterns.Behavioral.Command.Command" project="AlgoJava" 
     file="/AlgoJava/src/Patterns/Behavioral/Command/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="457" y="130"/>    
+    <position height="-1" width="-1" x="462" y="113"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,41 +48,53 @@
   </interface>  
   <class id="6" language="java" name="Patterns.Behavioral.Command.BuyCommand" project="AlgoJava" 
     file="/AlgoJava/src/Patterns/Behavioral/Command/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="289" y="357"/>    
+    <position height="-1" width="-1" x="257" y="362"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="7">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <association id="8">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="9" name="stk"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="11">    
+  <association id="7">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="orderList"/>      
-      <multiplicity id="13" minimum="0" maximum="2147483647"/>    
+      <attribute id="8" name="orderList">        
+        <position height="0" width="0" x="5" y="-17"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="5" y="-17"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="14">    
+  <realization id="10">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
-  <association id="15">    
+  <realization id="11">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <association id="12">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="16" name="stk"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+      <attribute id="13" name="stk">        
+        <position height="0" width="0" x="61" y="54"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="61" y="54"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="16" name="stk">        
+        <position height="0" width="0" x="61" y="54"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="61" y="54"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  

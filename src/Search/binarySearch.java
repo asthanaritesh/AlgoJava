@@ -26,7 +26,7 @@ public class binarySearch {
 				return -1;
 			}
 		}
-		int mid = (s+e)/2;
+		int mid = (s+e)/2; //Or to avoid overflow: s>>1 + e>>1
 		if (searchFor == intArr[mid])
 			return mid;
 		else if (searchFor < intArr[mid])

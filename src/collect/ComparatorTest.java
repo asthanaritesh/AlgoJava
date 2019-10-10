@@ -8,6 +8,26 @@ package collect;
 import java.io.*; 
 import java.util.*; 
 
+//Class to compare Moviess by ratings 
+class RatingCompare implements Comparator<Movies> 
+{ 
+	public int compare(Movies m1, Movies m2) 
+	{ 
+		if (m1.getRating() < m2.getRating()) return -1; 
+		if (m1.getRating() > m2.getRating()) return 1; 
+		else return 0; 
+	} 
+} 
+
+//Class to compare Moviess by name 
+class NameCompare implements Comparator<Movies> 
+{ 
+	public int compare(Movies m1, Movies m2) 
+	{ 
+		return m1.getName().compareTo(m2.getName()); 
+	} 
+} 
+
 //A class 'Movies' that implements Comparable 
 class Movies implements Comparable<Movies> 
 { 
@@ -64,24 +84,6 @@ class Movies implements Comparable<Movies>
 	} 
 } 
 
-//Class to compare Moviess by ratings 
-class RatingCompare implements Comparator<Movies> 
-{ 
-	public int compare(Movies m1, Movies m2) 
-	{ 
-		if (m1.getRating() < m2.getRating()) return -1; 
-		if (m1.getRating() > m2.getRating()) return 1; 
-		else return 0; 
-	} 
-} 
 
-//Class to compare Moviess by name 
-class NameCompare implements Comparator<Movies> 
-{ 
-	public int compare(Movies m1, Movies m2) 
-	{ 
-		return m1.getName().compareTo(m2.getName()); 
-	} 
-} 
 
 

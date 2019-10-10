@@ -59,7 +59,7 @@ public class MaxTradingProfit {
 	}
 
 	public static void main(String[] args) {
-		int k = 2;
+		int k = 2; // times you can buy ans sell.  Number of transactions.
 		int[] price = { 10, 22, 5, 75, 65, 80 };
 		int n = price.length;
 		System.out.println("Maximum profit is: " + maxProfit(price, n, k));
