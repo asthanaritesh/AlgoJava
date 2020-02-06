@@ -1,4 +1,4 @@
-//Problem is exactly same as CP.MaxArray.java but entirely different solution
+//Problem is exactly same as CP.MaxArray.java
 //Maximum profit by buying and selling a share at most k times
 //In share trading, a buyer buys shares and sells on a future date. Given the stock price of n days, the trader is allowed to make at most k transactions, where a new transaction can only start after the previous transaction is complete, find out the maximum profit that a share trader could have made.
 //Examples Input:  

@@ -70,4 +70,5 @@ public class ArrayListTest {
 		Pair<String, Integer> tuple0 = vObj2.get(0);
 		System.out.println("key of first pair is: "+ tuple0.getKey() + "\tValue of first pair is: " + tuple0.getValue());
 	}
+
 }

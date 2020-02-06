@@ -18,6 +18,7 @@ public class SetTest {
 		System.out.println("After Removal of 'for', Set: "+ hs2);
 		System.out.println("Size of hs2 is: " + hs2.size());
 		System.out.println("contains geeks?: " + hs2.contains("geeks"));
+		//.get() is not present in set
 		
         System.out.println("Using For: ");
         for (String str : hs2) {

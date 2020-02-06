@@ -19,7 +19,12 @@ public class HMap {
 		
 		int size = hm_si.size();
 		
-		bool isThere = hm_si.containsKey("bob");
+		boolean isThere = hm_si.containsKey("bob");
+		System.out.println("\nbob key is there? "+ isThere);
+		
+		isThere = hm_si.containsValue(25);
+		System.out.println("\n25 Value is there? "+ isThere);
+		
 		int bob = hm_si.get("bob");
 		System.out.println("\nbob value is: "+ bob);
 		

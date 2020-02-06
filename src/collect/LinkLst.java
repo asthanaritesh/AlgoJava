@@ -33,7 +33,8 @@ public class LinkLst {
   
         // Get and set elements from linked list 
         Object element = LL.get(1); 
-        System.out.println("\nElement returned by get() : " + element); 
+        System.out.println("\nElement returned by get() : " + element);
+        System.out.println("\nElement returned by getFirst() : " + LL.getFirst());
         LL.set(2, "Ten"); 
         System.out.println("\nLinked list after change : " + LL); 
 		
